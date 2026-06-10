@@ -47,7 +47,7 @@ conda create -n ssno python=3.10 -y
 conda activate ssno
 
 # Install the PyTorch build that matches your CUDA or CPU environment first.
-pip install torch numpy matplotlib einops tqdm
+pip install torch numpy matplotlib einops tqdm thop
 ```
 
 The experiments are written for PyTorch and can run on CUDA devices when available. Use `--device cpu` for CPU-only runs.
@@ -102,7 +102,6 @@ Training logs, checkpoints, histories, and results are written under the selecte
 
 - Generated datasets, checkpoints, logs, and Python cache files are intentionally not tracked.
 - Override the hard-coded default paths in scripts with `--path` and `--data_path` when running on a new machine.
-- Some benchmark folders contain model imports for experimental variants whose source files are not included in this release; use the model names with corresponding files under each `model/` directory.
 
 ## Citation
 
