@@ -6,6 +6,16 @@ Official implementation of **Stable Spectral Neural Operator (SSNO)** for learni
   <img src="https://github.com/user-attachments/assets/cffa7cc4-2383-4f32-81d7-ace8b50b9610" width="720" alt="SSNO overview" />
 </p>
 
+## Paper
+
+**Stable spectral neural operator for learning stiff PDE systems from limited data**  
+Rui Zhang, Han Wan, Yang Liu, Hao Sun  
+[arXiv:2512.11686](https://arxiv.org/abs/2512.11686) | [DOI: 10.48550/arXiv.2512.11686](https://doi.org/10.48550/arXiv.2512.11686)
+
+## Abstract
+
+SSNO is an equation-free framework for learning stiff PDE dynamics from sparse observations. It uses spectral inductive biases to capture local and global spatial interactions in frequency space, and combines them with an integrating-factor time-stepping scheme for stable long-horizon prediction. Across 2D and 3D benchmarks in Cartesian and spherical geometries, SSNO improves prediction accuracy by one to two orders of magnitude over leading baselines while requiring only 2-5 training trajectories for robust out-of-distribution generalization.
+
 ## Overview
 
 This repository contains data-generation and neural-operator training code for stiff PDE benchmarks. The implementation focuses on stable long-horizon prediction when only a small number of trajectories are available for training.
@@ -108,10 +118,12 @@ Training logs, checkpoints, histories, and results are written under the selecte
 If this code is useful for your research, please cite the accompanying paper:
 
 ```bibtex
-@article{ssno,
-  title   = {Stable Spectral Neural Operator for Learning Stiff PDE Systems From Limited Data},
-  author  = {TODO},
-  journal = {TODO},
-  year    = {TODO}
+@article{zhang2025stable,
+  title   = {Stable spectral neural operator for learning stiff PDE systems from limited data},
+  author  = {Zhang, Rui and Wan, Han and Liu, Yang and Sun, Hao},
+  journal = {arXiv preprint arXiv:2512.11686},
+  year    = {2025},
+  doi     = {10.48550/arXiv.2512.11686},
+  url     = {https://arxiv.org/abs/2512.11686}
 }
 ```
